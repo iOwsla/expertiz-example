@@ -1,0 +1,98 @@
+@import "/styles/main.scss";
+
+.who_we_are {
+  .about_us {
+    .about_us_title {
+      overflow: hidden;
+    }
+    .about_us_description {
+      overflow: hidden;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 151%;
+    }
+    .about_us_image {
+      overflow: hidden;
+    }
+  }
+
+  .our {
+    .our_description {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 162%;
+    }
+
+    .our_box {
+      width: calc(100% - 2rem);
+      height: 7rem;
+      background-color: $color-bg-grey-primary;
+
+      margin-top: 1.6rem;
+
+      display: flex;
+      align-items: center;
+
+      .our_box_content {
+        display: flex;
+        align-items: center;
+        margin-left: 2rem;
+
+        img {
+          margin-right: 1.5rem;
+        }
+
+        .description {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $grid-large) {
+  .who_we_are {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    .about_us {
+      .about_us_description {
+        font-size: 1.2rem;
+        line-height: 151%;
+      }
+    }
+
+    .our {
+      margin-top: 2rem;
+      .our_list {
+        margin-top: 0;
+      }
+      .our_image {
+        margin: 2rem 0;
+      }
+      .our_description {
+        font-size: 1.2rem;
+        line-height: 151%;
+      }
+      .our_box {
+        width: 100%;
+        height: 5rem;
+        &:not(:first-child) {
+          margin-top: 1.6rem;
+        }
+        .our_box_content {
+          margin-left: 1rem;
+          img {
+            margin-right: 1rem;
+            width: 2rem;
+            height: 2rem;
+          }
+          .description {
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

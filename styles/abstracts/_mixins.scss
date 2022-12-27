@@ -1,0 +1,49 @@
+@mixin display_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex_1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@mixin justify_content($position) {
+  -webkit-box-pack: $position;
+  -webkit-justify-content: $position;
+  -ms-flex-pack: $position;
+  justify-content: $position;
+}
+
+@mixin align_items($position) {
+  -webkit-box-align: $position;
+  -webkit-align-items: $position;
+  -ms-flex-align: $position;
+  align-items: $position;
+}
+
+@mixin flex_detail($type: inherit, $justify_content, $align_items) {
+  @include display_flex();
+  @include justify_content($justify_content);
+  @include align_items($align_items);
+  flex-direction: $type;
+}
+
+@mixin font($font-size, $font-weight, $text-align: left, $line-height: normal) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  text-align: $text-align;
+  line-height: $line-height;
+}
+
+@mixin position_create ($type, $top: auto, $left: auto, $bottom: auto, $right: auto) {
+  position: $type;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}

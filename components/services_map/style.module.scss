@@ -1,0 +1,95 @@
+@import "/styles/main.scss";
+
+.section_20 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; // 43 fotoğraf da 230 2 katında 500 vh olması lazım. default 230vh olcak
+  margin-top: 0px;
+
+  .div-block-203 {
+    // position: -webkit-sticky;
+    // position: sticky;
+    top: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; // 100vh olcak
+    padding-top: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .services_map {
+      // position: absolute; 
+      z-index: 1;
+      display: block;
+      width: 100%;
+      max-width: 980px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      transition: all 1s ease;
+      .lottie-animation-6 {
+        width: 100%;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          transform: translate3d(0px, 0px, 0px);
+        }
+      }
+    }
+  }
+}
+
+
+// .services_map {
+//   position: relative;
+//   display: block;
+//   width: 100%;
+//   height: 500vh;
+//   margin-top: 0px;
+
+
+//   .services_map_list {
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     position: relative;
+
+//     svg {
+//       position: absolute;
+//       top: 0;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//     }
+//   }
+// }
+
+// @media (max-width: $grid-large) {
+//   .services_map {
+//     .services_map_list {
+//       height: 50vh;
+
+//       img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
+// }

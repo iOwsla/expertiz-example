@@ -1,0 +1,25 @@
+@import "/styles/main.scss";
+
+.input {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+
+  .cv {
+    cursor: pointer;
+    display: flex;
+    div {
+      padding: 1.5rem;
+      color: #8F8F8F;
+      flex: 1;
+    }
+
+    border-bottom: 2px solid #E5E5E5;
+  }
+
+  .error_message {
+    font-size: 1.4rem;
+    color: $color-red;
+    margin-top: .2rem;
+  }
+}

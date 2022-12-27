@@ -1,0 +1,163 @@
+@import "/styles/abstracts/variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+a:visited,
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*[x-apple-data-detectors] {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  font-size: 13px;
+  font-family: Arial;
+}
+
+input,
+textarea:focus {
+  outline: 0;
+}
+
+input,
+textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+input[type="checkbox"],
+input[type="radio"],
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 13px;
+  height: 13px;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+  overflow: visible;
+  width: auto;
+}
+
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+textarea {
+  vertical-align: top;
+  overflow: auto;
+}
+
+select[multiple] {
+  vertical-align: top;
+}
+
+.lock-scroll {
+  overflow: hidden;
+  block-size: 100%;
+  touch-action: none;
+  -ms-touch-action: none;
+}
+
+.splide__slide {
+  width: 17% !important;
+}
+
+@media (max-width: $grid-xlarge) {
+  .splide__slide {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: $grid-large) {
+  .splide__slide {
+    width: 33.33% !important;
+  }
+}
+
+

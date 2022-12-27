@@ -1,0 +1,34 @@
+@import "/styles/main.scss";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+
+  .sidebar_title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #171B24;
+    opacity: 0.6;
+  }
+
+  .sidebar_list {
+    margin-top: 3.6rem;
+    .sidebar_item {
+      .sidebar_link {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 6rem;
+        
+        &.active {
+          font-weight: 700;
+          color: #FFCC05;
+        }
+        &:hover {
+          font-weight: 700;
+          color: #FFCC05;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+@import "/styles/main.scss";
+
+.contact {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  .contact_content {
+    margin-top: 4rem;
+    justify-content: space-between;
+
+    .left {
+      width: 55%;
+
+      .title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        width: 80%;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #2E2E2E;
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        color: #494949;
+        margin-top: 2rem;
+      }
+
+      .items {
+        margin-top: 5rem;
+        display: flex;
+        gap: 1.6rem;
+
+        .item {
+          width: calc((100% / 2) - 1.6rem);
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 4rem;
+
+          .item_top_title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+
+          }
+
+          .item_title {
+            color: #2E2E2E;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          .item_logo {
+            img {
+              width: 6rem;
+              height: 6rem;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+
+      .form {
+        .text_area {
+          height: 18rem;
+        }
+
+        .input_error {
+          margin-left: 0;
+        }
+
+        .text_area_error {
+          position: unset;
+        }
+
+        .input_left_right {
+          display: flex;
+          justify-content: space-between;
+
+          .input_left {
+            width: calc((100% / 2) - 3.15rem);
+          }
+
+          .input_right {
+            width: calc((100% / 2) - 3.15rem);
+          }
+        }
+
+        .button {
+
+          width: 25rem;
+          height: 5rem;
+          background-color: $color-black;
+          color: $color-white;
+          border-radius: 5.7rem;
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          cursor: pointer;
+
+          transition: all .7s ease-out;
+
+          &.success {
+            background: linear-gradient(to left, #92CC34 50%, $color-black 50%) right;
+            background-size: 300% 100%;
+          }
+
+          &.unsuccess {
+            background: linear-gradient(to left, #F83D02 50%, $color-black 50%) right;
+            background-size: 300% 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $grid-large) {
+  .contact {
+    margin-top: 0;
+    .contact_content {
+      margin-top: 2rem;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+        margin-top: 0rem;
+        .title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          width: 100%;
+        }
+        .description {
+          font-size: 12px;
+          line-height: 151%;
+          margin-top: 0rem;
+        }
+        .items {
+          margin-top: 1.6rem;
+
+          .item {
+            width: 100%;
+            margin-bottom: 1rem;
+
+            .item_top_title {
+              font-size: 13px;
+
+            }
+
+            .item_title {
+              font-size: 11px;
+              line-height: 14px;
+            }
+
+            .item_logo {
+              img {
+                width: 3rem;
+                height: 3rem;
+              }
+            }
+          }
+
+          &.item_second {
+            display: flex !important;
+            justify-content: space-between !important;
+
+            .item {
+              display: flex;
+              align-items: start;
+              width: calc((100% / 2) - 1rem);
+
+              .item_top_title {
+                line-height: 18px;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        margin-top: 3rem;
+        width: 100%;
+
+        .form {
+          .text_area {
+            height: 18rem;
+          }
+
+          .input_left_right {
+            flex-direction: column;
+
+            .input_left {
+              width: 100%;
+            }
+
+            .input_right {
+              width: 100%;
+            }
+          }
+
+          .button {
+            width: 11.4rem;
+            height: 4rem;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "/styles/main.scss";
+
+.mobile_expertiz {
+  margin-top: 12rem;  
+  .images {
+    margin-bottom: 6rem;
+    .image_first {
+      img {
+        border-radius: 8px;
+      }
+    }
+    .image_second {
+      img {
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .mobile_expertiz_content {
+    .mobile_expertiz_content_title {
+      margin: unset;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: $grid-large) {
+  .mobile_expertiz {
+    margin-top: 2rem;
+
+    .mobile_expertiz_content {
+      .description {
+        font-size: 1.2rem;
+      }
+    }
+
+    .images {
+      flex-wrap: nowrap;
+      margin-bottom: 0;
+      .image_first {
+        max-width: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .image_second {
+        max-width: 50%;
+        gap: 1rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "/styles/main";
+
+.board_of_directors {
+  .images {
+    margin-top: 4rem;
+    gap: 2.5rem;
+    justify-content: space-between;
+    .image_box {
+      text-align: center;
+      background: #ECEEF0;
+      border-radius: 8px;
+      width: calc((100% / 4) - 2.5rem);
+      max-height: 435px;
+      .image {
+        width: 100%;
+        height: 304px;
+        overflow: hidden;
+        border-radius: 8px;
+        img {
+          cursor: zoom-in;
+          width: 100%;
+          height: 304px;
+          object-position: center;
+          object-fit: cover;
+          border-radius: 8px;
+          transition: all .5s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .content {
+        margin-top: 2.7rem;
+        margin-bottom: 3.5rem;
+        .title {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          color: #283646;
+          margin-bottom: 1.6rem;
+        }
+        .description {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #77808B;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $grid-large) {
+  .board_of_directors {
+    .images {
+      margin-top: 2rem;
+      gap: 1.7rem;
+      .image_box {
+        width: calc(100%);
+      }
+    }
+  }
+
+}

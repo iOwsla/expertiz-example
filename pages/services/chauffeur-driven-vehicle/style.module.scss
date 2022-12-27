@@ -1,0 +1,246 @@
+@import "/styles/main.scss";
+
+.chauffeur_driven_vehicle {
+  margin-top: 4rem;
+  height: 100%;
+
+  .chauffeur_driven_vehicle_content {
+    display: flex;
+    justify-content: space-between;
+
+    .leftbar {
+      width: 30%;
+
+      .pagination {
+        margin-top: 1rem;
+
+        .pagination_number_primary {
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 64px;
+        }
+
+        .pagination_number_secondary {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          color: #77808B;
+        }
+
+        .pagination_arrows {
+          display: flex;
+          gap: 2.7rem;
+          margin-top: 2.7rem;
+
+          .previous {
+            cursor: pointer;
+          }
+
+          .next {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .slider {
+
+      max-width: 70%;
+      display: flex;
+      gap: 3.6rem;
+      overflow: hidden;
+      padding-top: calc(63.19px / 2);
+
+      margin: auto;
+
+      .box {
+        transition: all 1s ease;
+        background-color: $color-white;
+
+        &.active {
+          background-color: $color-bg-grey-primary;
+        }
+
+        .box_title {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 32px;
+          color: #494949;
+
+          &.active {
+            color: $color-black;
+          }
+        }
+
+        padding: 5.8rem 2.5rem 2rem 2.5rem;
+        max-width: 334px;
+        min-width: 334px;
+        position: relative;
+        border-radius: 8px;
+
+        .box_number {
+          transition: all 1s ease;
+          max-width: 63.19px;
+          width: 63.19px;
+          height: 63.19px;
+          background: $color-bg-grey-primary;
+          border-radius: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 22px;
+          color: #ECECEC;
+          position: absolute;
+          top: calc(-63.19px / 2);
+
+          &.active {
+            background: #FFCC05;
+            color: #FFECA3;
+          }
+        }
+      }
+    }
+  }
+
+  .video {
+    margin-top: 4rem;
+
+    .video_content {
+      .title {
+        margin: 1rem 0;
+      }
+
+      .description {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .img_data {
+    width: 100%;
+    margin: 5rem 0;
+    .img_data_left {
+      text-align: left;
+    }
+    .img_data_right {
+      text-align: right;
+    }
+  }
+
+
+}
+
+@media (max-width: $grid-large) {
+  .chauffeur_driven_vehicle {
+    margin-top: 4rem;
+    height: 100%;
+
+    .chauffeur_driven_vehicle_content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .leftbar {
+        width: 100%;
+
+        .pagination {
+          margin-top: 2rem;
+          display: flex;
+          justify-content: space-between;
+
+          .pagination_arrows {
+            .previous {
+              img {
+                width: 4rem;
+                height: 4rem;
+              }
+            }
+
+            .next {
+              img {
+                width: 4rem;
+                height: 4rem;
+              }
+            }
+          }
+        }
+      }
+
+      .slider {
+
+        display: flex;
+        gap: 0rem;
+        overflow: hidden;
+        padding-top: calc(63.19px / 2);
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+
+        .box {
+          padding: 5.8rem 2.5rem 2rem 2.5rem;
+          max-width: 100%;
+          min-width: 100%;
+        }
+      }
+    }
+
+    .video {
+      margin-top: 3.3rem;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      .video_left {
+        width: calc(50% - 1.5rem) !important;
+        margin-bottom: auto;
+
+        video {
+          width: 100%;
+        }
+      }
+
+      .video_right {
+        width: calc(50%) !important;
+      }
+
+      .video_content {
+        .title-md {
+          margin: 0;
+          font-weight: 600;
+          font-size: 1.6rem !important;
+          line-height: 2.2rem;
+        }
+
+        .title {
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 120.5%;
+        }
+
+        .description {
+          margin-top: .6rem;
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 151%;
+        }
+      }
+    }
+
+    .img_data {
+      width: 100%;
+      margin: unset;
+
+      .img_data_left {
+        text-align: left;
+        margin-bottom: 2rem;
+      }
+
+      .img_data_right {
+        text-align: right;
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,64 @@
+@import "/styles/main.scss";
+
+.who_we_are {
+  margin: 2rem 0;
+
+  .who_we_are_content {
+    .who_we_are_title {
+      width: 20%;
+    }
+
+    .who_we_are_description {
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      margin-left: 20%;
+      width: 30rem;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: $grid-special) {
+  .who_we_are {
+    .who_we_are_content {
+      .who_we_are_description {
+        margin-bottom: 0;
+      }
+
+      .button {
+        padding: 15px 90px;
+      }
+    }
+  }
+}
+
+@media (max-width: $grid-large) {
+  .who_we_are {
+    .who_we_are_content {
+      padding-top: 1.5rem !important;
+
+      .who_we_are_title {
+
+        width: 100%;
+      }
+
+      .who_we_are_description {
+        width: 100%;
+      }
+
+      .button {
+        width: 30.9rem;
+        height: 5.5rem;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

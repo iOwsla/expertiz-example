@@ -1,0 +1,13 @@
+@import '/styles/main.scss';
+
+
+.mobile_bg {
+  background: $color-bg-grey-primary;
+  padding: 2rem 0;
+}
+
+@media (max-width: $grid-large) {
+  .damage_and_assesment {
+    margin-top: 2rem;
+  }
+}

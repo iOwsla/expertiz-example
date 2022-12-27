@@ -1,0 +1,202 @@
+@import "/styles/main";
+
+.appeal {
+  max-width: $grid-large;
+
+  .appeal_header {
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+
+    .head_title {
+      width: 80%;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 72px;
+    }
+
+    .head_button {
+      width: 20%;
+      text-align: right;
+
+      button {
+        cursor: pointer;
+        width: 150px;
+        height: 5rem;
+        background-color: $color-yellow;
+        border-radius: 77px;
+
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 1.07143px;
+      }
+    }
+  }
+
+  .images {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+    .image {
+      width: calc(100% / 3);
+    }
+  }
+
+  .responsibilities {
+    .responsibilities_title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &.opacity {
+      .list {
+        .list_item {
+          img {
+            opacity: .3;
+          }
+        }
+      }
+    }
+
+    .list {
+      margin-top: 2rem;
+
+      .list_item {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        &:last-child {
+          margin-bottom: 4rem;
+        }
+
+        img {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .form {
+    position: relative;
+
+    .contact_input {
+      margin-left: 0;
+      left: 0;
+    }
+
+    .contact_textarea {
+      height: 20rem;
+    }
+
+    .button {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      button {
+        position: unset;
+        width: 25rem;
+        height: 5rem;
+        background-color: $color-black;
+        color: $color-white;
+        border-radius: 5.7rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        cursor: pointer;
+
+        transition: all .7s ease-out;
+
+        &.success {
+          background: linear-gradient(to left, #92CC34 50%, $color-black 50%) right;
+          background-size: 300% 100%;
+        }
+
+        &.unsuccess {
+          background: linear-gradient(to left, #F83D02 50%, $color-black 50%) right;
+          background-size: 300% 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $grid-large) {
+  .appeal {
+    .appeal_header {
+      margin-bottom: 2rem;
+
+      .head_title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 111.5%;
+      }
+
+      .head_button {
+        button {
+          width: 72px;
+          height: 29px;
+          font-size: 1rem;
+          line-height: 1.6rem;
+        }
+      }
+    }
+
+    .image {
+      margin: 2rem 0;
+
+      img {
+        width: 100%;
+        min-height: 17.9rem;
+        max-height: 179px;
+        object-fit: cover;
+      }
+    }
+
+    .responsibilities {
+      .responsibilities_title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      .list {
+        margin-top: 1rem;
+
+        .list_item {
+          &:last-child {
+            margin-bottom: 0rem;
+          }
+
+          img {
+            margin-right: 1.2rem;
+            width: 2rem;
+          }
+        }
+      }
+    }
+
+    .form {
+      position: relative;
+
+      .button {
+        position: unset;
+        width: 18rem;
+        height: 5rem;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        left: 0%;
+        transform: unset;
+      }
+    }
+  }
+
+}

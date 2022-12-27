@@ -1,0 +1,171 @@
+@import "/styles/main.scss";
+
+.card_list {
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 8rem;
+  max-width: 1100px;
+  gap: 1rem;
+
+  .card_position {
+    width: calc(50% - 1rem);
+
+    .title {
+      font-weight: 600;
+      font-size: 4.8rem;
+      line-height: 131%;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      &:hover {
+        .card_content {
+          .card_button {
+            svg {
+              animation: leftRightAnimation 1s ease infinite;
+            }
+          }
+        }
+      }
+
+      margin: auto;
+      margin-bottom: 2.4rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 8px;
+
+
+      .card_content {
+
+        height: 50rem;
+        max-height: 50rem;
+        position: relative;
+
+        .card_title {
+          left: 4rem;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 43px;
+          color: $color-white;
+          position: absolute;
+          top: 40%;
+          width: 100%;
+
+        }
+
+        .card_description {
+          left: 4rem;
+          top: 50%;
+          position: absolute;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          color: $color-white;
+          width: 70%;
+        }
+
+        .card_button {
+          position: absolute;
+          background: #FFCC05;
+          border-radius: 8px;
+          width: 32rem;
+          height: 6.8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          bottom: 3rem;
+          left: -5rem;
+
+          font-weight: 500;
+          font-size: 1.6rem;
+          line-height: 150%;
+
+
+          span {
+            margin: auto;
+          }
+
+          svg {
+            margin-right: 5rem;
+          }
+
+          &.right {
+            left: unset;
+            right: -5rem;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: $grid-large) {
+  .card_list {
+    margin-top: 2rem;
+    gap: 0;
+    .card_position {
+      width: 100%;
+ 
+      .title {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        margin-bottom: 1rem;
+      }
+
+      .card {
+        .card_content {
+          max-height: 33.1rem;
+
+          .card_title {
+            left: 3rem;
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            top: 40%;
+            width: 100%;
+          }
+
+          .card_description {
+            left: 3rem;
+            top: calc(50% + 2rem);
+            font-size: 1.4rem;
+            line-height: 150%;
+          }
+
+          .card_button {
+            width: 17.7rem;
+            height: 4.5rem;
+            bottom: 1rem;
+            left: -1.4rem;
+
+            svg {
+              width: 2.4rem;
+              height: 1rem;
+              margin-right: 3rem;
+            }
+
+            &.right {
+              left: unset;
+              right: -1.4rem;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@keyframes leftRightAnimation {
+  0% {
+    transform: translateX(0)
+  }
+
+  50% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}

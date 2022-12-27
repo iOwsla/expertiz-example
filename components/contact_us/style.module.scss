@@ -1,0 +1,59 @@
+@import "/styles/main.scss";
+
+.contact_us {
+  padding: 10rem 0;
+  padding-top: 4rem;
+  width: calc(100%);
+  position: relative;
+
+  .contact_input {
+    margin: unset !important;
+    width: calc(100% - 3rem) !important;
+  }
+
+
+  .contact_title {
+    margin-bottom: 3rem;
+  }
+
+  .button {
+    position: absolute;
+    width: 30.9rem;
+    height: 5.5rem;
+    background-color: $color-black;
+    color: $color-white;
+    border-radius: 5.7rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4.5rem;
+    transition: all .7s ease-out;
+
+    &.success {
+      background: linear-gradient(to left, #92CC34 50%, $color-black 50%) right;
+      background-size: 300% 100%;
+    }
+
+    &.unsuccess {
+      background: linear-gradient(to left, #F83D02 50%, $color-black 50%) right;
+      background-size: 300% 100%;
+    }
+  }
+
+  .contact_input {
+    width: calc(100% - 10rem);
+    margin: auto;
+  }
+}
+
+@media (max-width: $grid-large) {
+  .contact_us {
+    width: calc(100% - 5rem);
+    .contact_title {
+      font-size: 2.4rem;
+    }
+  }
+}

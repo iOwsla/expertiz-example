@@ -1,0 +1,36 @@
+{
+  "name": "bieksper",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.10.14",
+    "@splidejs/react-splide": "^0.7.11",
+    "@splidejs/splide": "^4.1.2",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "animate.css": "^4.1.1",
+    "dev-35inch": "^1.0.4",
+    "fast-memoize": "^2.5.2",
+    "mapbox-gl": "^2.10.0",
+    "next": "12.2.5",
+    "next-i18next": "^12.0.1",
+    "react": "18.2.0",
+    "react-animation-on-scroll": "^5.1.0",
+    "react-dom": "18.2.0",
+    "react-map-gl": "^7.0.19",
+    "react-mask-field": "^3.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-toastify": "^9.0.8",
+    "sass": "^1.54.8",
+    "swiper": "^8.4.3"
+  },
+  "devDependencies": {
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5"
+  }
+}

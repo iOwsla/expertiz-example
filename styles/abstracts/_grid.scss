@@ -1,0 +1,88 @@
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md {
+  width: 100%;
+  padding-right: 2.8rem;
+  padding-left: 2.8rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * $gutter-y);
+  >* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: $gutter-y;
+  }
+
+  @for $i from 1 through 6 {
+    .col-#{$i} {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .row {
+    @for $i from 1 through 6 {
+      .col-#{$i} {
+        flex: 0 0 auto;
+        width: calc(#{100%} / #{$i});
+      }
+      
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .row {
+    @for $i from 1 through 6 {
+      .col-#{$i} {
+        flex: 0 0 auto;
+        width: calc(#{100%} / #{$i});
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .row {
+    @for $i from 1 through 6 {
+      .col-#{$i} {
+        flex: 0 0 auto;
+        width: calc(#{100%} / #{$i});
+      }
+    }
+  }
+}

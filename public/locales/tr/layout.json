@@ -1,0 +1,232 @@
+{
+  "Pages": {
+    "BoardOfDirectors": {
+      "HeadTitle": ""
+    }
+  },
+  "slider": [
+    {
+      "Title": "",
+      "Description": "",
+      "Url": "#"
+    }
+  ],
+  "WhoWeAre": {
+    "Title": "Bieksper kimdir",
+    "TitleColor": "?",
+    "Description": "8 yılı aşkın süredir , otomotiv sektöründe faaliyet gösteren Bieksper , Ekspero Bilişim Teknolojileri Ltd Şti’nin iştirakidir. Türkiye’de 2.el oto alım/ satım sırasındaki ilişkiyi kurumsal temeller üzerine yeniden düzenleyip, alışılagelmiş alım/satım deneyimlerini teknoloji ile senkronize ederek güvenli bir alım/satım zemini oluşturmaktadır. Ülke genelinde 15 ilde bulunan otomobil stok alanları ve oto ekspertiz tesisleri ile yılda 40.000 adet üzeri kurumsal filo araç ekspertizi ve ekspertriz sonrası değerleme hizmeti , 50.000 adet üzeri şoförlü araç taşıma hizmetinin yanı sıra iş ortaklıgı yapmış olduğu global operasyonel filo kiralama şirketlerine yılda 650.000 araç/gün stoklama hizmeti sağlayan Bieksper kurumsal oto ekspertiz sektörünün Türkiye’deki lider kuruluşudur.",
+    "Button": "Daha Fazla"
+  },
+  "Services": {
+    "Title": "Hizmetlerimiz"
+  },
+  "ServicesMap": {
+    "Title": "Hizmet",
+    "TitleColor": "Haritası"
+  },
+  "NumbersPage": {
+    "Title": "Rakamlarla",
+    "TitleColor": "Bieksper",
+    "Map": [
+      {
+        "city": "Tekirdağ",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "İstanbul",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Kocaeli",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Samsun",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Trabzon",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Balıkesir",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Bursa",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Eskişehir",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Ankara",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Malatya",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Diyarbakır",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Van",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "İzmir",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Manisa",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Kayseri",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Kahramanmaraş",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Mardin",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Aydın",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Muğla",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Antalya",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Mersin",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Adana",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Gaziantep",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Hatay",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      },
+      {
+        "city": "Şanlıurfa",
+        "address": "",
+        "seller": 1,
+        "gallery": []
+      }
+    ]
+  },
+  "Partner": {
+    "Title": "Partner Ağımızı {TitleColor} gösteriyoruz",
+    "TitleColor": "sizin için",
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus",
+    "Button": "Ortaklarımızla Tanışın",
+    "ButtonUrl": 0,
+    "Images": [
+      "/images/partner/image01.svg",
+      "/images/partner/image02.svg",
+      "/images/partner/image03.svg",
+      "/images/partner/image04.svg",
+      "/images/partner/image05.svg",
+      "/images/partner/image06.svg",
+      "/images/partner/image07.svg",
+      "/images/partner/image08.svg",
+      "/images/partner/image09.svg",
+      "/images/partner/image10.svg",
+      "/images/partner/image11.svg",
+      "/images/partner/image12.svg",
+      "/images/partner/image13.svg",
+      "/images/partner/image14.svg",
+      "/images/partner/image15.svg"
+    ]
+  },
+  "Form": {
+    "Title": "Bizimle iletişime geçin!",
+    "Input": {
+      "Name": "Adınız",
+      "Surname": "Soyadınız",
+      "NameAndSurname": "Adınız Soyadınız",
+      "Phone": "Telefon",
+      "Message": "Mesajınız",
+      "Subject": "Konu",
+      "Email": "Email",
+      "Button": {
+        "Default": "Gönder",
+        "Success": "Gönderildi",
+        "UnSuccess": "Gönderilemedi"
+      }
+    },
+    "Errors": {
+      "required": "Zorunlu Alan.",
+      "maxStringLength": "Maximum karakter sınırını aştınız.",
+      "minStringLength": "Minimum karakter sınırı altındasınız.",
+      "isEmail": "Email Formatı Hatalı.",
+      "isNumber": "Lütfen sadece numara giriniz.",
+      "fileUpload": "Lütfen dosya yükleyiniz."
+    }
+  }
+}

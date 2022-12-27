@@ -1,0 +1,67 @@
+@import "/styles/main.scss";
+
+.detail {
+  height: 28rem;
+  background-color: $color-yellow;
+  background-image: url("/images/background_linear.svg");
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .title {
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .desc {
+    width: 30%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    opacity: .8;
+  }
+
+  .button {
+      width: 32%;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: $grid-large) {
+  .detail {
+    height: 45rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    .title {
+
+      width: 100%;
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 4.6rem;
+    }
+
+    .desc {
+      text-align: left;
+      width: 100%;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      opacity: .8;
+    }
+
+    .button {
+      width: 100%;
+      text-align: center;
+
+      a {
+
+        padding: 1.5rem 6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "/styles/main.scss";
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  position: relative;
+  label {
+    margin-bottom: .5rem;
+    color: #333333;
+    line-height: 2.2rem;
+    font-weight: 600;
+  }
+  textarea {
+    box-shadow: none;
+    border-bottom: 2px solid #E5E5E5;
+    padding: 1.5rem;
+   
+    width: auto;
+    max-width: 100%;
+    min-height: 10rem;
+    resize: none;
+    &::placeholder {
+      color: #999999;
+    }
+  }
+  .error_message {
+    font-size: 1.4rem;
+    color: $color-red;
+    margin-top: .2rem;
+    margin-left: .5rem;
+  }
+}

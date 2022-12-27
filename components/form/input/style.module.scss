@@ -1,0 +1,29 @@
+@import "/styles/main.scss";
+
+.input {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  
+  label {
+    margin-bottom: .5rem;
+    color: #333333;
+    line-height: 2.2rem;
+    font-weight: 600;
+  }
+  input {
+    box-shadow: none;
+    border-bottom: 2px solid #E5E5E5;
+    padding: 1.5rem;
+
+    &::placeholder {
+      color: #999999;
+    }
+  }
+  .error_message {
+    font-size: 1.4rem;
+    color: $color-red;
+    margin-top: .2rem;
+    margin-left: .5rem;
+  }
+}

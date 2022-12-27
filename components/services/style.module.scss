@@ -1,0 +1,55 @@
+@import "/styles/main.scss";
+
+.services {
+  overflow: hidden;
+  padding: 2rem 0;
+  background-color: #747474;
+
+  .svg_container {
+    text-align: center;
+    width: 100%;
+
+
+    .svg_link {
+      fill: #747474;
+      transition: all .4s ease;
+
+      .svg_linear {
+        transition: all .4s ease;
+      }
+
+      &:hover {
+        fill: $color-yellow;
+
+        .svg_linear {
+          fill: $color-yellow;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $grid-large) {
+  .services {
+    margin: auto;
+
+    .services_title {
+      margin-top: 0rem;
+    }
+
+    .svg_container {
+      height: 100%;
+      display: block;
+      margin-top: 3.5rem;
+      .svg_link {
+        &:hover {
+          .svg_linear {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+}
